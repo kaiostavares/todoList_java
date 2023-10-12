@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @PostMapping("/") //Como a gente está criando, vêm de um método POST
     public void create(@RequestBody UserModel userModel){ //ResquestBody significa que oq eu estou recebendo o body da requisição
-        System.out.println(userModel.getName());
+        System.out.println(userModel.getUsername());
     }
 }
